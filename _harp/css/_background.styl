@@ -27,9 +27,13 @@ body
 	background-color: #eee
 	
 	.work-date
-		float right
+		display: block
 		font-size: 1.6rem
 		font-style italic
+		
+		@media (min-width: 550px) {
+			float: right
+		}
 
 .section-interests
 	background-color: #555C62
