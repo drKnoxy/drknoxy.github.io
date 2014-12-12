@@ -1,30 +1,25 @@
-section.section-intro
+
+section.section-about
 	.container
 		.row
 			.three.columns
 				.avatar-clip
 					.avatar
 
+				nav
+					ul
+						li About
+						li: a(href="#skill") Skills
+						li: a(href="#work") Work
+						li: a(href="#features") Featured Tasks
+						li: a(href="#interests") Interests
+
 			.nine.columns
 				h1 Adam Willoughby-Knox 
 					span.pipe | 
 					span.career Software Engineer
 
-				h2 Bonjour
-
-section.section-about
-	.container
-		.row
-			.three.columns
-				nav
-					ul
-						li About
-						li: a(href="#skills") Skills
-						li: a(href="#work") Work
-						li: a(href="#interests") Interests
-
-			.nine.columns
-				
+				h3 Bonjour
 				p.
 					Well rounded developer seeking a company that can 
 					offer challenging tasks, makes data based decision, 
@@ -48,33 +43,123 @@ section.section-about
 								i.icon-stackoverflow
 
 
-section.section-skill
+section.section-skill#skill
 	.container
 		h2 Skills
 
 		.row
 			.four.columns
-				h4 Languages
+				
+				h3.list-header.
+					<i class="icon-pencil icon--skill"></i>
+					Frontend
 				ul
 					li HTML / CSS
 					li JavaScript / jQuery / AJAX
-					li PHP
-					li MySQL
-					li Stylus
+					li AngularJS
+					li Stylus / LESS
+					li Gulp
 
 			.four.columns
-				h4 MVC / CMS
+				h3.list-header.
+					<i class="icon-doc icon--skill"></i>
+					Backend / MVC
 				ul
+					li PHP
+					li MySQL
 					li Lithium / CakePHP
 					li Magento / Zend
 					li Wordpress
-					li AngularJS
 
 			.four.columns
-				h4 Other areas of knowledge
+				h3.list-header.
+					<i class="icon-cup icon--skill"></i>
+					Other
 				ul
 					li Git
 					li Linux
 					li Photoshop
 					li Mongo
 					li Elasticsearch
+
+section.section-work#work
+	.container
+		h2 Work experience
+
+		h3 Software Engineer @ zulily
+			span.work-date May 2013 - Present
+		p.
+			Selected as sole developer on core quarterly projects for my abilities to 
+			quickly develop working prototypes, translate non-technical requests, and 
+			my constant focus on the customer. Core projects included; Site Redesign 
+			Exploration, Cart Redesign, and International Site Integration.
+		p.
+			Primary developer responsible for frontend security enhancements. Led the company 
+			in technical presentations, which included topics on AngularJS, and site 
+			security.
+		
+		h3 Lead Frontend Developer @ Julep
+			span.work-date Aug 2012 - May 2013
+		p.
+			Launched a platform migration to Magento in 5 weeks, and then a 
+			subscription service in the following 2 weeks. Led site re-branding 
+			development. Headed development of the customer facing portal for 
+			subscription management. Promoted to a lead position in recognition of 
+			strong leadership skills, effective communication between design, 
+			marketing, and tech, and for setting expectations for coding standards 
+			within the company.
+		
+		h3 Web Developer @ Zumiez
+			span.work-date May 2012 - Aug 2012
+		p.
+			Aided in site migration from Magento 1.3 to 1.10 Enterprise. Added 
+			functionality to the site while improving adherence to coding standards 
+			and preparation for a multi-lingual store view implementation.
+		
+		h3 Web Developer @ GoSolid
+			span.work-date Dec 2010 - May 2012
+		p.
+			Customized Magento, Wordpress, and Drupal websites by hand-crafting themes 
+			and functionality. Developed custom jQuery plugins leveraging AJAX, and 
+			javascript templating technologies. Encapsulated reusable code in Magento 
+			modules.
+		
+		h3 Contract Web Developer @ Ten Penny Studio
+			span.work-date 2011
+		h3 Volunteer Web Developer @ Bike Delaware
+			span.work-date 2011
+
+section.section-features#features
+	.container
+		h2 Features I'm particularly proud of
+		ul
+			li Created an efficient and expressive base curl class for api calls to other internal teams. Then utilized this class to implement audience segmentation treatments, and notification systems.
+			li Developed a responsive AngularJS single page application that pulled photos from a third party api and displayed them for voting.
+			li Implemented a site wide javascript data layer so that all tracking pixels could be managed by marketing and served by a third party, Signal formerly BrightTag.
+			li A url shortener I wrote Play with Scala to replace bitly.
+			li Programmatically creating orders, and a deferred payment method in Magento.
+			li Facebook authentication for e-commerce
+			li Job application website with a resume management system built with AJAX, PHP, and Flash for uploading files.
+			li On demand loading of Facebook Like buttons.
+			li A real time in-browser chat for a Drupal based intranet.
+
+section.section-interests#interests
+	.container
+		.row
+			.six.columns
+				h3.list-header Interests
+				ul
+					li Hiking
+					li CrossFit
+					li Photography
+					li Ping Pong
+					li Travel: Sydney, Argentina, Spain, and Italy
+			
+			.six.columns
+				h3.list-header Technical Interests
+				ul
+					li Data Visualizations: Highcharts, D3
+					li Single Page Apps: AngularJS
+					li Responsive Design
+					li Gulp and other Frontend Build Tools
+					li Analytics; New Relic, Google Analytics • User Experience
