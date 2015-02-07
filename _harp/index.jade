@@ -6,20 +6,20 @@ section.section-about
 				.avatar-clip
 					.avatar
 
-				nav
+				nav.main-nav(role=navigation)
 					ul
-						li About
+						li.about-link: a(href="#about") About
 						li: a(href="#skill") Skills
 						li: a(href="#work") Work
-						li: a(href="#features") Featured Tasks
+						li: a(href="#features") Cool Tasks
 						li: a(href="#interests") Interests
 
-			.nine.columns
+			#about.nine.columns
 				h1 Adam Willoughby-Knox 
 					span.pipe | 
 					span.career Software Engineer
 
-				h3 Bonjour
+				h3 Bonjour,
 				p.
 					Well rounded developer seeking a company that can 
 					offer challenging tasks, makes data based decision, 
@@ -135,16 +135,21 @@ section.section-work#work
 section.section-features#features
 	.container
 		h2 Features I'm particularly proud of
-		ul
-			li Created an efficient and expressive base curl class for api calls to other internal teams. Then utilized this class to implement audience segmentation treatments, and notification systems.
-			li Developed a responsive AngularJS single page application that pulled photos from a third party api and displayed them for voting.
-			li Implemented a site wide javascript data layer so that all tracking pixels could be managed by marketing and served by a third party, Signal formerly BrightTag.
-			li A url shortener I wrote Play with Scala to replace bitly.
-			li Programmatically creating orders, and a deferred payment method in Magento.
-			li Facebook authentication for e-commerce
-			li Job application website with a resume management system built with AJAX, PHP, and Flash for uploading files.
-			li On demand loading of Facebook Like buttons.
-			li A real time in-browser chat for a Drupal based intranet.
+		.row
+				.six.columns
+					ul
+						li 4 Time Hack Day Winner; iPad Targeted SPA Rewrite, AngularJS / Service Based / Responsive Rewrite, Mobile Site Performance Optimizations, Improved Empty Cart Communication
+						li Created an efficient and expressive base curl class for api calls to other internal teams. Then utilized this class to implement audience segmentation treatments, and notification systems.
+						li Developed a responsive AngularJS single page application that pulled photos from a third party api and displayed them for voting.
+						li A url shortener I wrote Play with Scala to replace bitly.
+				.six.columns
+					ul
+						li Implemented a site wide javascript data layer so that all tracking pixels could be managed by marketing and served by a third party, Signal formerly BrightTag.
+						li Programmatically creating orders, and a deferred payment method in Magento.
+						li Facebook authentication for e-commerce
+						li Job application website with a resume management system built with AJAX, PHP, and Flash for uploading files.
+						li On demand loading of Facebook Like buttons.
+						li A real time in-browser chat for a Drupal based intranet.
 
 section.section-interests#interests
 	.container
@@ -161,7 +166,7 @@ section.section-interests#interests
 			.six.columns
 				h3.list-header Technical Interests
 				ul
-					li Data Visualizations: Highcharts, D3
+					li Data Visualizations: Highcharts, D3, Kibana
 					li Single Page Apps: AngularJS
 					li Responsive Design
 					li Gulp and other Frontend Build Tools
